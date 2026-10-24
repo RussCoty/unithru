@@ -1,0 +1,11 @@
+{
+  "version": "0.1",
+  "request_id": "hello-1",
+  "op": "hello",
+  "body": {
+    "versions": [
+      "0.1"
+    ],
+    "client_id": "daw-demo"
+  }
+}

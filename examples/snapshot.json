@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "request_id": "snapshot-1",
+  "op": "snapshot",
+  "epoch": "epoch-demo",
+  "revision": 0,
+  "status": "ok",
+  "body": {
+    "device_id": "device-demo",
+    "observed_ms": 100,
+    "routes": [
+      {
+        "route_id": "route-vocal-cue",
+        "source_id": "input-vocal",
+        "destination_id": "cue-a",
+        "enabled": false,
+        "gain_db": -12,
+        "pan": 0,
+        "pan_law": "mono_equal_power",
+        "owner_session": null,
+        "lease_id": null,
+        "route_revision": 0
+      }
+    ]
+  }
+}

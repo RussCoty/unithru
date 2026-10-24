@@ -1,0 +1,143 @@
+[
+  {
+    "version": "0.1",
+    "request_id": "acquire-1",
+    "session_id": "session-demo",
+    "epoch": "epoch-demo",
+    "op": "acquire",
+    "body": {
+      "route_id": "route-vocal-cue",
+      "expected_route_revision": 0,
+      "duration_ms": 3000,
+      "expiry_policy": "restore"
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "acquire-1",
+    "op": "acquire",
+    "epoch": "epoch-demo",
+    "revision": 1,
+    "status": "ok",
+    "body": {
+      "route": {
+        "route_id": "route-vocal-cue",
+        "source_id": "input-vocal",
+        "destination_id": "cue-a",
+        "enabled": false,
+        "gain_db": -12,
+        "pan": 0,
+        "pan_law": "mono_equal_power",
+        "owner_session": "session-demo",
+        "lease_id": "lease-demo-0123456789abcdef01234567",
+        "route_revision": 1
+      },
+      "duration_ms": 3000
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "set-1",
+    "session_id": "session-demo",
+    "epoch": "epoch-demo",
+    "op": "set_route",
+    "body": {
+      "route_id": "route-vocal-cue",
+      "lease_id": "lease-demo-0123456789abcdef01234567",
+      "expected_route_revision": 1,
+      "enabled": true,
+      "gain_db": -12,
+      "pan": 0,
+      "pan_law": "mono_equal_power"
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "set-1",
+    "op": "set_route",
+    "epoch": "epoch-demo",
+    "revision": 2,
+    "status": "ok",
+    "body": {
+      "route": {
+        "route_id": "route-vocal-cue",
+        "source_id": "input-vocal",
+        "destination_id": "cue-a",
+        "enabled": true,
+        "gain_db": -12,
+        "pan": 0,
+        "pan_law": "mono_equal_power",
+        "owner_session": "session-demo",
+        "lease_id": "lease-demo-0123456789abcdef01234567",
+        "route_revision": 2
+      }
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "renew-1",
+    "session_id": "session-demo",
+    "epoch": "epoch-demo",
+    "op": "renew",
+    "body": {
+      "lease_id": "lease-demo-0123456789abcdef01234567",
+      "duration_ms": 3000
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "renew-1",
+    "op": "renew",
+    "epoch": "epoch-demo",
+    "revision": 3,
+    "status": "ok",
+    "body": {
+      "route": {
+        "route_id": "route-vocal-cue",
+        "source_id": "input-vocal",
+        "destination_id": "cue-a",
+        "enabled": true,
+        "gain_db": -12,
+        "pan": 0,
+        "pan_law": "mono_equal_power",
+        "owner_session": "session-demo",
+        "lease_id": "lease-demo-0123456789abcdef01234567",
+        "route_revision": 3
+      },
+      "duration_ms": 3000
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "release-1",
+    "session_id": "session-demo",
+    "epoch": "epoch-demo",
+    "op": "release",
+    "body": {
+      "lease_id": "lease-demo-0123456789abcdef01234567",
+      "cleanup": "restore"
+    }
+  },
+  {
+    "version": "0.1",
+    "request_id": "release-1",
+    "op": "release",
+    "epoch": "epoch-demo",
+    "revision": 4,
+    "status": "ok",
+    "body": {
+      "route": {
+        "route_id": "route-vocal-cue",
+        "source_id": "input-vocal",
+        "destination_id": "cue-a",
+        "enabled": false,
+        "gain_db": -12,
+        "pan": 0,
+        "pan_law": "mono_equal_power",
+        "owner_session": null,
+        "lease_id": null,
+        "route_revision": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+# Related work and sources
+
+Primary sources checked on 2026-10-24. These establish context and transport facts; UniThru's route lifecycle and message semantics are proposals authored for this draft. Links do not imply endorsement, implementation support or shared governance.
+
+- [Steinberg: ASIO Direct Monitoring, Cubase Pro 15](https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/recording/recording_asio_direct_monitoring_t.html). Documents DAW control of monitoring performed in compatible audio hardware. UniThru should learn from this established workflow and investigate coexistence; it does not claim to invent direct monitoring.
+- [TotalReaper](https://github.com/acklin83/totalreaper). MIT-licensed REAPER/RME TotalMix FX Global OSC bridge. A relevant practical reference for integration and mixer feedback. This draft imports no code and makes no compatibility claim. Repository behavior and production readiness need independent testing before reliance.
+- [CNMAT OSC project](https://cnmat.berkeley.edu/research/projects/osc) and [OSC 1.0 specification](https://opensoundcontrol.stanford.edu/spec-1_0.html). OSC defines message addressing, types, bundles and packet representation. UniThru adds application semantics; OSC alone does not define DAW monitoring, leases or reliable state synchronization.
+- [AES70 standard overview, OCA Alliance](https://ocaalliance.github.io/aes70.html) and [AES70-1-2024 preview](https://www.aes.org/publications/standards/preview.cfm?ID=101). Existing control/monitoring architecture for media devices. A UniThru-to-AES70 mapping deserves investigation; no such mapping is supplied here.
+- [IETF RFC 6295: RTP Payload Format for MIDI](https://www.rfc-editor.org/info/rfc6295/). Basis for discussing RTP-MIDI as distinct from Network MIDI 2.0.
+- [MIDI Association: Network MIDI 2.0 overview](https://midi.org/network-midi-2-0-udp-overview). Describes UDP transport for UMP and initial ratification in November 2024.
+- [USB-IF: USB Class Definition for MIDI Devices v2.0](https://www.usb.org/document-library/usb-class-definition-midi-devices-v20). USB MIDI device-class context; application monitoring control still requires a mapping.
+- [Intel: Thunderbolt technology brief](https://www.intel.com/content/dam/doc/technology-brief/thunderbolt-technology-brief.pdf). Architectural background for PCIe/DisplayPort tunneling. Specific generation speeds in this historical document are not UniThru performance assumptions.
+
+Other audio/control standards and existing vendor integrations may overlap. Further review should identify reusable models and interoperability opportunities rather than make novelty claims. HD/HDX-style workflow is a user-experience reference only; this project has no affiliation with Avid, Steinberg, RME, Cockos, the MIDI Association, USB-IF, Intel or AES.

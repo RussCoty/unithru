@@ -1,0 +1,62 @@
+{
+  "version": "0.1",
+  "request_id": "hello-1",
+  "op": "hello",
+  "epoch": "epoch-demo",
+  "revision": 0,
+  "status": "ok",
+  "body": {
+    "device_id": "device-demo",
+    "session_id": "session-demo",
+    "capabilities": {
+      "versions": [
+        "0.1"
+      ],
+      "sources": [
+        {
+          "id": "input-vocal",
+          "label": "Vocal",
+          "channels": [
+            "analog-in-1"
+          ]
+        }
+      ],
+      "destinations": [
+        {
+          "id": "cue-a",
+          "label": "Cue A",
+          "channels": [
+            "analog-out-3",
+            "analog-out-4"
+          ]
+        }
+      ],
+      "topologies": [
+        {
+          "source_channels": 1,
+          "destination_channels": 2,
+          "pan_law": "mono_equal_power"
+        }
+      ],
+      "gain_db": {
+        "min": -60,
+        "max": 6,
+        "step": 0.5
+      },
+      "max_routes": 1,
+      "max_leases": 1,
+      "lease_ms": {
+        "min": 1000,
+        "max": 10000
+      },
+      "max_message_bytes": 8192,
+      "max_requests_per_session": 4096,
+      "poll_interval_ms": 100,
+      "operation_timeout_ms": 1000,
+      "readback": "verified",
+      "atomic_batch": false,
+      "timing": "immediate",
+      "extensions": []
+    }
+  }
+}

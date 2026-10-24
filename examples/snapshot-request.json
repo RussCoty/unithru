@@ -1,0 +1,10 @@
+{
+  "version": "0.1",
+  "request_id": "snapshot-1",
+  "session_id": "session-demo",
+  "epoch": "epoch-demo",
+  "op": "snapshot",
+  "body": {
+    "device_id": "device-demo"
+  }
+}

@@ -1,6 +1,6 @@
 # Conformance and test plan
 
-The draft has no certified implementation. Passing the included validator proves fixture/schema consistency only. A future claim should name the exact draft version, binding, adapter, hardware/firmware, driver, OS, DAW and test harness revision, with raw observations.
+The draft has no certified implementation. Passing the fixture validator proves fixture/schema consistency only. The [loopback simulator](simulator.md) adds automated lifecycle and real OSC/UDP tests against a fake backend. These provide no hardware or DAW interoperability evidence. A future claim should name the exact draft version, binding, adapter, hardware/firmware, driver, OS, DAW and test harness revision, with raw observations.
 
 ## Required harness cases
 

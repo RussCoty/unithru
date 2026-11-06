@@ -1,6 +1,6 @@
 # OSC/UDP binding, draft 0.1
 
-This binding is specified for implementation but unimplemented here. It uses OSC 1.0 messages with a JSON UTF-8 blob for the logical payload. This trades direct mapping in generic OSC controllers for exact IDs, extensible discovery and consistent validation. Basic MIDI offers a separate limited mapping.
+An experimental loopback implementation of this binding is available in `unithru/`; see [simulator usage and limits](../docs/simulator.md). It uses OSC 1.0 messages with a JSON UTF-8 blob for the logical payload. This trades direct mapping in generic OSC controllers for exact IDs, extensible discovery and consistent validation. Basic MIDI offers a separate limited mapping.
 
 ## Framing
 

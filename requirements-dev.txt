@@ -1,1 +1,2 @@
-jsonschema>=4.23,<5
+-r requirements.txt
+lupa>=2.2,<3

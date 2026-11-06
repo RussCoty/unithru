@@ -1,4 +1,4 @@
-name: Validate draft fixtures
+name: Validate draft and simulator
 on: [push, pull_request]
 permissions:
   contents: read
@@ -13,3 +13,4 @@ jobs:
       - run: python -m pip install -r requirements-dev.txt
       - run: python tools/validate.py
       - run: python -m unittest discover -s tests -v
+      - run: python -m unithru demo

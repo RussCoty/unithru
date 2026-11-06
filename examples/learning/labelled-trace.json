@@ -1,0 +1,157 @@
+{
+  "format": "unithru-learning/0.1",
+  "source": "synthetic",
+  "device": {
+    "identity": "fictional-device",
+    "model": "Synthetic learning fixture",
+    "firmware": "not-hardware"
+  },
+  "transport": "usb",
+  "capture_layer": "bus",
+  "events": [
+    {
+      "trial_id": "idle-0",
+      "timestamp_ns": 0,
+      "phase": "idle",
+      "endpoint": "usb:ep0",
+      "selector": "monitor-enable",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "a0010010"
+    },
+    {
+      "trial_id": "idle-1",
+      "timestamp_ns": 1,
+      "phase": "idle",
+      "endpoint": "usb:ep0",
+      "selector": "monitor-enable",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "a0010011"
+    },
+    {
+      "trial_id": "trial-1",
+      "timestamp_ns": 2,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "monitor-enable",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "a0010023",
+      "control": "route.enabled",
+      "target": "input-1/cue-1",
+      "value": false
+    },
+    {
+      "trial_id": "trial-1",
+      "timestamp_ns": 3,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "monitor-enable",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "a0010124",
+      "control": "route.enabled",
+      "target": "input-1/cue-1",
+      "value": true
+    },
+    {
+      "trial_id": "trial-2",
+      "timestamp_ns": 4,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "monitor-enable",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "a0010025",
+      "control": "route.enabled",
+      "target": "input-1/cue-1",
+      "value": false
+    },
+    {
+      "trial_id": "trial-2",
+      "timestamp_ns": 5,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "monitor-enable",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "a0010126",
+      "control": "route.enabled",
+      "target": "input-1/cue-1",
+      "value": true
+    },
+    {
+      "trial_id": "idle-0",
+      "timestamp_ns": 6,
+      "phase": "idle",
+      "endpoint": "usb:ep0",
+      "selector": "cue-gain",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "b0013010"
+    },
+    {
+      "trial_id": "idle-1",
+      "timestamp_ns": 7,
+      "phase": "idle",
+      "endpoint": "usb:ep0",
+      "selector": "cue-gain",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "b0013011"
+    },
+    {
+      "trial_id": "trial-1",
+      "timestamp_ns": 8,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "cue-gain",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "b0013029",
+      "control": "route.gain_db",
+      "target": "input-1/cue-1",
+      "value": -12
+    },
+    {
+      "trial_id": "trial-1",
+      "timestamp_ns": 9,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "cue-gain",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "b001402a",
+      "control": "route.gain_db",
+      "target": "input-1/cue-1",
+      "value": -6
+    },
+    {
+      "trial_id": "trial-2",
+      "timestamp_ns": 10,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "cue-gain",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "b001302b",
+      "control": "route.gain_db",
+      "target": "input-1/cue-1",
+      "value": -12
+    },
+    {
+      "trial_id": "trial-2",
+      "timestamp_ns": 11,
+      "phase": "action",
+      "endpoint": "usb:ep0",
+      "selector": "cue-gain",
+      "direction": "host_to_device",
+      "transfer_type": "control",
+      "payload_hex": "b001402c",
+      "control": "route.gain_db",
+      "target": "input-1/cue-1",
+      "value": -6
+    }
+  ]
+}

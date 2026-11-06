@@ -2,7 +2,7 @@
 
 The learner now has provider code for observing selected processes and Linux USB transfers. Capture feeds the existing normalized trace analyser; it never sends learned commands or enables hardware writes.
 
-**Local validation status, 2026-11-03:** recorder, usbmon parser, command lifecycle and agent-logic tests run on this Mac. Frida 17.2.17 is installed, and native IOKit and libusb interception tests pass against our disposable mock process. No manufacturer mixer has been attached or hardware protocol verified. A separate manually triggered native-fixture workflow is provided; it has not been run by this change.
+**Validation status, 2026-11-06:** all 112 local tests pass, including native IOKit and libusb interception against our disposable mock process with Frida 17.2.17. The [hosted capture checks](https://github.com/RussCoty/unithru/actions/runs/42208567067) also pass their native-fixture tests on macOS 15 and Linux, and compile the macOS monitor. The Linux job skips the macOS-only IOKit case. No manufacturer mixer has been attached or hardware protocol verified. The [first hardware trial](hardware-trial.md) remains pending an available interface and mixer app.
 
 ## Observation paths
 
